@@ -1,0 +1,24 @@
+.bdy{
+	background-image: url("../images/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.menu{
+	border-top-right-radius: 20%;
+	border-bottom-right-radius: 20%;
+}
+
+.menu_content > div{
+    border-radius: 100em 100em 100em 100em;
+    font-size: 110%;
+    font-family: Bahnschrift Light;
+}
+
+.mainheading{
+	font-size: 5em;
+	color: #5f4646;
+	font-family: Agency FB;
+	font-weight: bold;
+}
