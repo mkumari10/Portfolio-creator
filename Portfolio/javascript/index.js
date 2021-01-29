@@ -18,4 +18,14 @@ $(document).ready(function(){
         }
     });
 
+   //Mobile menu
+   $('#mob_menu').on('click',function(e){
+      $('mob_menu').hide();
+      $('.menu').removeClass('d-none d-md-flex').addClass('d-flex');
+   });
+
+   //Close button
+   $('#close').on('click',function(e){
+       $('.menu').removeClass('d-flex').addClass('d-none d-md-flex');
+   });
 });
