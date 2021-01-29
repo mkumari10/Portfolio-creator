@@ -16,9 +16,19 @@
       </div>
     </div> -->
    	<div class="row vh-100">
+	   <!--Mobile Menu-->
+           <div class="col-12 d-md-none position-fixed m-2" id="mob_menu">
+             <div class="bar"></div>
+             <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+
    	 <!-- Menu bar -->	
-   	  <div class="col-md-3 vh-100 d-md-flex flex-column justify-content-center d-none border bg-dark menu position-fixed" style="z-index:1;">
-        <div class="row text-center mb-5">
+       <div class="col-md-3 vh-100 d-md-flex flex-column justify-content-center d-none border bg-dark menu position-fixed" style="z-index:1;">
+         <div class="row d-md-none mb-auto" id="close" style="cursor:pointer;">
+           &#x274C;
+         </div>
+         <div class="row text-center mb-5">
           <div class="col-12 mb-1 menu_content">
             <div class="ml-5 mr-5 p-2 "><a href="index.html" class="text-light">Home</a></div>
           </div>
@@ -52,7 +62,7 @@
    	  </div>
 
    	  <!-- Main body -->
-   	  <div class="col-md-9" style="margin-left:13em;">
+   	  <div class="col-md-9" ml-auto>
         <div class="row text-center d-flex align-items-center mt-5">
           <div class="col-12">
             <h1 class="mainheading">PORTFOLIO CREATOR</h1>
