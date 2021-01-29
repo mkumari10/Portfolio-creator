@@ -22,3 +22,18 @@
 	font-family: Agency FB;
 	font-weight: bold;
 }
+
+.bar{
+  height:5px;
+  width:5%;
+  margin: 3px;
+  background-color:white ;
+  display: block;
+  border-radius:5px;
+}
+
+
+#mob_menu{
+	cursor:pointer;
+    z-index:1;
+}
