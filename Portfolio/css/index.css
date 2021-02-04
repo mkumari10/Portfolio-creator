@@ -1,5 +1,5 @@
 .bdy{
-	background-image: url("../images/back.png");
+    background-image: url("../images/back.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -36,4 +36,32 @@
 #mob_menu{
 	cursor:pointer;
     z-index:1;
+}
+.inptext{
+	border-top-style: hidden;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	background: border-box;
+	border-bottom-color: cornsilk;
+    border-bottom-width: revert;
+}
+
+.form-control:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom-color:#388E3C ;
+    border-bottom-width: medium;
+}
+
+.labelText{
+    font-family: cursive;
+    font-weight: 500;
+}
+
+
+#contactus{
+background-image:url("../images/contactuspic.jpg");
+background-size: cover;
+border-radius: 1%;
 }
