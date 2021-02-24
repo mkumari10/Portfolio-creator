@@ -16,36 +16,37 @@
       </div>
     </div> -->
    	<div class="row vh-100">
-	   <!--Mobile Menu-->
-           <div class="col-12 d-md-none position-fixed m-2" id="mob_menu">
-             <div class="bar"></div>
-             <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
+ 
+    <!--Mobile Menu-->
+      <div class="col-12 d-md-none position-fixed m-2 position-fixed" id="mob_menu">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+      </div>
 
    	 <!-- Menu bar -->	
-       <div class="col-md-3 vh-100 d-md-flex flex-column justify-content-center d-none border bg-dark menu position-fixed" style="z-index:1;">
-         <div class="row d-md-none mb-auto" id="close" style="cursor:pointer;">
+   	  <div class="col-md-3 vh-100 d-md-flex flex-column justify-content-center d-none border bg-dark menu">
+        <!-- <div class="row d-md-none mb-auto" id="close" style="cursor:pointer;">
            &#x274C;
-         </div>
-         <div class="row text-center mb-5">
+        </div> -->
+        <div class="row text-center mb-5">
           <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="index.html" class="text-light">Home</a></div>
+            <div class="ml-5 mr-5 p-2 "><a href="#index" class="text-light">Home</a></div>
           </div>
           <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2"><a href="#about.html" class="text-light">About us</a></div>
+            <div class="ml-5 mr-5 p-2"><a href="#aboutus" class="text-light">About us</a></div>
           </div>
           <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#bill.html" class="text-light">Templates</a></div>
+            <div class="ml-5 mr-5 p-2 "><a href="#template" class="text-light">Templates</a></div>
           </div>
-          <div class="col-12 mb-1 menu_content">
+          <!--<div class="col-12 mb-1 menu_content">
             <div class="ml-5 mr-5 p-2 "><a href="#gg.html" class="text-light">Portfolio</a></div>
-          </div> 
+          </div> -->                 
           <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#hh.html" class="text-light">Contact Us</a></div>
-          </div>                
+            <div class="ml-5 mr-5 p-2 "><a href="#login" class="text-light">Login</a></div>
+          </div>
           <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#ndex.html" class="text-light">Login</a></div>
+            <div class="ml-5 mr-5 p-2 "><a href="#contactus" class="text-light">Contact Us</a></div>
           </div>
         </div>
         <div class="row mt-5 text-center">
@@ -62,12 +63,15 @@
    	  </div>
 
    	  <!-- Main body -->
-   	  <div class="col-md-9" ml-auto>
-            <div class="row text-center d-flex align-items-center mt-5">
-              <div class="col-12">
-                <h1 class="mainheading">PORTFOLIO CREATOR</h1>
-              </div>
-            </div>
+   	  <div class="col-md-9 ml-auto">
+        <!--Home page-->
+        <div class="row text-center d-flex align-items-center mt-5" id="index">
+          <div class="col-12" style="padding-top: 11em;">
+            <h1 class="mainheading">PORTFOLIO CREATOR</h1>
+            <p class="para">The Online Resume Builder</p>
+          </div>
+        </div>
+        
         <!--Aboutus-->
         <div class="row" style="margin-top: 38em;" id="aboutus">
           <div class="col-12">
@@ -108,9 +112,9 @@
               </fieldset>
             </form>
           </div>
-         </div>		  
+        </div>
+   		</div>
    	</div>
-      </div>
    </div>
    <script src="javascript/jquery-3.5.1.js"></script>
    <script src="javascript/index.js"></script>
