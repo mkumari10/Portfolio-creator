@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	let menu = document.getElementsByClassName('menu_content');
-    
 
     let anchor = $(menu).find('a');
     $(menu[0]).children('div').addClass('bg-warning');
@@ -18,14 +17,35 @@ $(document).ready(function(){
         }
     });
 
-   //Mobile menu
+
+   //Mobile men
    $('#mob_menu').on('click',function(e){
-      $('mob_menu').hide();
-      $('.menu').removeClass('d-none d-md-flex').addClass('d-flex');
+      // $('mob_menu').hide();
+      // $('.menu').removeClass('d-none d-md-flex').addClass('d-flex');
+      document.getElementById("mob_menu").classList.toggle("change");
+      if($('#mob_menu').hasClass('change')){
+         $('.menu').removeClass('d-none d-md-flex').addClass('d-flex');
+      }else{
+         $('.menu').removeClass('d-flex').addClass('d-none d-md-flex');
+      }
    });
 
    //Close button
    $('#close').on('click',function(e){
        $('.menu').removeClass('d-flex').addClass('d-none d-md-flex');
    });
+ 
+    //Hide edit button for editting
+    $('#edit-profile').on('click',function(e){
+          $('.profinfo').removeClass('d-none');
+          $(this).hide();
+    });
+
+
+    $('#cancel').on('click',function(e){
+          e.preventDefault();
+          $('.profinfo').addClass('d-none');
+          $("#edit-profile").show();
+          $('.profile').val('');
+    });
 });
