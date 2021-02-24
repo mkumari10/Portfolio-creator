@@ -1,5 +1,5 @@
 .bdy{
-    background-image: url("../images/back.png");
+	background-image: url("../images/back.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -8,6 +8,8 @@
 .menu{
 	border-top-right-radius: 20%;
 	border-bottom-right-radius: 20%;
+  position: fixed;
+  z-index: 1;
 }
 
 .menu_content > div{
@@ -23,27 +25,46 @@
 	font-weight: bold;
 }
 
+.para{
+    font-size: 22px;
+    color: antiquewhite;
+    font-family: monospace;
+}
+
 .bar{
   height:5px;
-  width:5%;
+  width:30px;
   margin: 3px;
-  background-color:white ;
+  background-color:#696969;
   display: block;
   border-radius:5px;
 }
 
 
 #mob_menu{
+  position: relative;
 	cursor:pointer;
-    z-index:1;
+  z-index:2;
 }
+.change #bar1{                                                              /* Styling on div having id 'bar1' */
+  transform:translateY(10px) rotateZ(-49deg);
+  background-color: #f0e68c;
+}
+.change #bar3{                                                              /* Styling on div having id 'bar3' */
+  transform:translateY(-6px) rotateZ(44deg);
+  background-color: #f0e68c;
+}
+.change #bar2{                                                              /* Styling on div having id 'bar2'  */
+  opacity: 0;
+}
+
 .inptext{
 	border-top-style: hidden;
 	border-left-style: hidden;
 	border-right-style: hidden;
 	background: border-box;
 	border-bottom-color: cornsilk;
-    border-bottom-width: revert;
+  border-bottom-width: revert;
 }
 
 .form-control:focus{
@@ -65,3 +86,4 @@ background-image:url("../images/contactuspic.jpg");
 background-size: cover;
 border-radius: 1%;
 }
+
