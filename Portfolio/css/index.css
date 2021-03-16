@@ -86,4 +86,15 @@ background-image:url("../images/contactuspic.jpg");
 background-size: cover;
 border-radius: 1%;
 }
+#more{
+        display: none;
+      }
+ button{
+         background-color: #ff0066;
+         border: none;
+         outline: none;
+         color: white;
+         font-size: 20px;
+         padding: 5px;
+        }
 
