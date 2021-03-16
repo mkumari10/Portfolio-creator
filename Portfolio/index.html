@@ -75,7 +75,32 @@
         <!--Aboutus-->
         <div class="row" style="margin-top: 38em;" id="aboutus">
           <div class="col-12">
-            <h1 class="text-center">About us</h1>
+             <img src="ap.png" style=" margin-top:100px;" height="450" weidth="500" align="right">
+               <h5 style="text-decoration:underline; text-decoration-color:#E75480;margin-top:150px;">About Us</h5>
+               
+               <p>The aim of the Portfolio creator is to design and develop a resume for job seeker.  
+               Portfolio Creator provides the users the popular resume formats and a better way to show their resume to the employers. We register the user and collect as many data or details about the user. A job seeker can download their resume as well. It is to provide a way to the customers to design their resumes according to their requirement. This would be facilitating the employees to make and print their resume in a proper format. Keeping track of the customer and their resumes.
+               <span id ="more">Create different system users and assign different roles with related permissions.	Manage all the account details such as user name, phone number, address, email address etc. of all the user from one central location.	Confirmation of end user identity and will verify which users are authorized to receive support. User can select the format of their resume from the given templates. User can update or edit their resume. User can download and take print of their resume.Interface for filling up the information. User authentication. </span> </p>
+               <button type="button" id="read" onclick="read()">Read More</button>
+    <script>
+      var i=0;
+      function read(){
+        if(!i){
+          document.getElementById("more").style.
+          display="inline";
+          document.getElementById("read").innerHTML="Read Less";
+          i=1;        
+          
+        }
+        else{
+          document.getElementById("more").style.
+          display="none";
+          document.getElementById("read").innerHTML="Read More";
+          i=0;        
+          
+        }
+      }
+    </script>
           </div>
         </div>
 
