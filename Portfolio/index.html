@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1">
     <link rel="stylesheet"  href="css/bootstrap.min.css">
     <link rel="stylesheet"  href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/> 
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="bdy">
    <div class="container-fluid">
-    <!-- <div clas="row bg-light">
-      <div class="col-12 m-3">
-        <h5>Logo</h5>
-      </div>
-    </div> -->
    	<div class="row vh-100">
  
     <!--Mobile Menu-->
@@ -25,36 +23,41 @@
       </div>
 
    	 <!-- Menu bar -->	
-   	  <div class="col-md-3 vh-100 d-md-flex flex-column justify-content-center d-none border bg-dark menu">
-        <!-- <div class="row d-md-none mb-auto" id="close" style="cursor:pointer;">
-           &#x274C;
-        </div> -->
+   	  <div class="col-md-2 vh-100 d-md-flex flex-column justify-content-center d-none border bg-dark menu">
         <div class="row text-center mb-5">
-          <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#index" class="text-light">Home</a></div>
+          <div class="col-12 mb-2 menu_content">
+            <div class="ml-4 mr-5 p-1 "><a href="#index" class="text-light">Home</a></div>
           </div>
-          <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2"><a href="#aboutus" class="text-light">About us</a></div>
+          <div class="col-12 mb-2 menu_content">
+            <div class="ml-4 mr-5 p-1"><a href="#aboutus" class="text-light">About us</a></div>
           </div>
-          <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#template" class="text-light">Templates</a></div>
+          <div class="col-12 mb-2 menu_content">
+            <div class="ml-4 mr-5 p-1 "><a href="#template" class="text-light">Templates</a></div>
+          </div> 
+          <div class="col-12 mb-2 menu_content">
+            <div class="ml-4 mr-5 p-1 "><a href="#subscription" class="text-light">Subscription</a></div>
+          </div>               
+          <div class="col-12 mb-2 menu_content">
+            <div class="ml-4 mr-5 p-1 "><a href="#login" class="text-light">Login</a></div>
           </div>
-          <!--<div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#gg.html" class="text-light">Portfolio</a></div>
-          </div> -->                 
-          <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#login" class="text-light">Login</a></div>
-          </div>
-          <div class="col-12 mb-1 menu_content">
-            <div class="ml-5 mr-5 p-2 "><a href="#contactus" class="text-light">Contact Us</a></div>
+          <div class="col-12 mb-2 menu_content">
+            <div class="ml-4 mr-5 p-1 "><a href="#contactus" class="text-light">Contact Us</a></div>
           </div>
         </div>
         <div class="row mt-5 text-center">
            <div class="col-12">
-             <a href="#facebook" class="border rounded bg-light p-1 pl-2 pr-2"><i class="fa fa-facebook fa-1x" aria-hidden="true"></i></a>
-             <a href="https://www.instagram.com/manju_10k" class="border rounded bg-light p-1 pl-2 pr-2"><i class="fa fa-instagram fa-1x" aria-hidden="true"></i></a>
-             <a href="https://www.linkedin.com/in/manju-kumari-13b900195" class="border rounded bg-light p-1 pl-2 pr-2"><i class="fa fa-linkedin fa-1x" aria-hidden="true"></i></a>
-             <a href="#twitter" class="border rounded bg-light p-1 pl-2 pr-2"><i class="fa fa-twitter fa-1x" aria-hidden="true"></i></a>
+             <a href="#facebook" class="border rounded bg-light p-1 pl-2 pr-2">
+              <!-- <i class="fa fa-facebook fa-1x" aria-hidden="true"></i> -->
+              <i class="fab fa-facebook-f"></i></a>
+             <a href="https://www.instagram.com/manju_10k" class="border rounded bg-light p-1 pl-2 pr-2">
+             <!--  <i class="fa fa-instagram fa-1x" aria-hidden="true"></i> -->
+            <i class="fab fa-instagram"></i></a>
+             <a href="https://www.linkedin.com/in/manju-kumari-13b900195" class="border rounded bg-light p-1 pl-2 pr-2">
+              <!-- <i class="fa fa-linkedin fa-1x" aria-hidden="true"></i> -->
+            <i class="fab fa-linkedin-in"></i></a>
+             <a href="#twitter" class="border rounded bg-light p-1 pl-2 pr-2">
+              <!-- <i class="fa fa-twitter fa-1x" aria-hidden="true"></i> -->
+            <i class="fab fa-twitter"></i></a>
            </div>
            <div class="col-12">
              <p class="text-light mt-4">&copy; Copyright Portfolio</p>
@@ -63,26 +66,209 @@
    	  </div>
 
    	  <!-- Main body -->
-   	  <div class="col-md-9 ml-auto">
+   	  <div class="col-md-10 ml-auto">
         <!--Home page-->
         <div class="row text-center d-flex align-items-center mt-5" id="index">
           <div class="col-12" style="padding-top: 11em;">
-            <h1 class="mainheading">PORTFOLIO CREATOR</h1>
+            <h1 class="mainheading a">PORTFOLIO CREATOR</h1>
             <p class="para">The Online Resume Builder</p>
           </div>
         </div>
         
         <!--Aboutus-->
-        <div class="row" style="margin-top: 38em;" id="aboutus">
-          <div class="col-12">
-             <img src="images/ap.png" style=" margin-top:100px;" height="450" weidth="500" align="right">
-               <h5 style="text-decoration:underline; text-decoration-color:#E75480;margin-top:150px;">About Us</h5>
-               
+        <div class="row divpos" style="margin-top: 23em;" id="aboutus" data-aos="zoom-in-up">
+         <div class="abtparent"> 
+          <h2 class="headabt">About Us</h2>
+          <div class="col-12 abtchild">
+            <!-- <img src="images/ap.png" style=" margin-top:100px;" height="450" weidth="500" align="right"> -->
                <p>The aim of the Portfolio creator is to design and develop a resume for job seeker.  
                Portfolio Creator provides the users the popular resume formats and a better way to show their resume to the employers. We register the user and collect as many data or details about the user. A job seeker can download their resume as well. It is to provide a way to the customers to design their resumes according to their requirement. This would be facilitating the employees to make and print their resume in a proper format. Keeping track of the customer and their resumes.
-               <span id ="more">Create different system users and assign different roles with related permissions.	Manage all the account details such as user name, phone number, address, email address etc. of all the user from one central location.	Confirmation of end user identity and will verify which users are authorized to receive support. User can select the format of their resume from the given templates. User can update or edit their resume. User can download and take print of their resume.Interface for filling up the information. User authentication. </span> </p>
-               <button type="button" id="read" onclick="read()">Read More</button>
-    <script>
+               <span id ="more">Create different system users and assign different roles with related permissions.  Manage all the account details such as user name, phone number, address, email address etc. of all the user from one central location.  Confirmation of end user identity and will verify which users are authorized to receive support. User can select the format of their resume from the given templates. User can update or edit their resume. User can download and take print of their resume.Interface for filling up the information. User authentication. </span> </p>
+               <!-- <button type="button" id="read" onclick="read()">Read More</button> -->
+          </div>
+        </div>
+        </div>
+
+        <!-- Templates --> 
+        <div class="row divpos" id="template" data-aos="zoom-in-up">
+          <div class="col-12">
+            <h1 class="headabt">Templates</h1>
+              <div class="swiper-container" style=" margin-bottom: 6em;">
+                <div class="swiper-wrapper">
+                   <div class="swiper-slide">
+                      <img src="images/template1.jpg" class="tempimg">
+                      <button type="button" class="btn btn-lg btn-warning view d-none">View</button>
+                   </div>
+                   <div class="swiper-slide">
+                      <img src="images/template2.jpg" class="tempimg">
+                      <button type="button" class="btn btn-lg btn-warning view d-none">View</button>
+                   </div>
+                   <div class="swiper-slide">
+                       <img src="images/template3.jpg" class="tempimg">
+                       <button type="button" class="btn btn-lg btn-warning view d-none">View</button>
+                   </div>
+                   <div class="swiper-slide">
+                       <img src="images/template4.jpg" class="tempimg">
+                       <button type="button" class="btn btn-lg btn-warning view d-none">View</button>s
+                   </div>
+                </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>  
+        </div> 
+
+        
+        <!--Subscription card-->
+        <div class="row divpos" id="subscription" data-aos="zoom-in-up">
+          <h1 class="col-12 headabt">Subscription</h1>
+           <div class="col-4 pricecard pr-0" id="free">
+                   <div class="price" style="background-color: #5bc1c1;">
+                        <h5>Free</h5>
+                         <p>Essential Features</p>
+                        <h3>$0</h3>
+                    </div>    
+                    <div>
+                       <table  class="featlist">
+                        <tbody>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Free Templates:<span class="tempnum" style="color: #4682b4;">4/8</span></td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Resume Version: <span class="tempnum" style="color: #4682b4;">1</span></td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-times-circle"></i></td>
+                            <td>Download and Save your resume in multiple Format</td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-times-circle"></i></td>
+                            <td>Removing branding on your resume</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="subbtn" style="margin-top: 2.5em;">
+                      <div class="bgstyle"></div>
+                      <button type="button" class="btn" disabled style="padding:.375rem 2.75rem;">Free</button>
+                    </div> 
+             </div>
+            <div class="col-4 pricecard pr-0" id="monthly">
+                    <div class="price" style="background-color: coral;">
+                       <h5 class="headsub">Monthly</h5>
+                         <p>Advanced Features</p>
+                        <h3 class="cost d-inline-block mr-1">$7.00</h3><span class="text-light">/month</span>
+                    </div>    
+                    <div >
+                      <table  class="featlist">
+                        <tbody>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Free Templates: <span class="tempnum" style="color: #ff581b;">6/8</span></td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Resume Version: <span class="tempnum" style="color: #ff581b;">2</span></td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-times-circle"></i></td>
+                            <td>Download and Save your resume in multiple Format</td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-times-circle"></i></td>
+                            <td>Removing branding on your resume</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="subbtn">
+                      <div class="bgstyle"></div>
+                      <button type="button" class="btn text-light">Subscribed</button>
+                    </div> 
+           </div>
+           <div class="col-4  pricecard pr-0" id="yearly">
+                    <div class="price" style="background-color: #ee4c6b;">
+                        <h5 class="headsub">Yearly</h5>
+                         <p>Pro Features</p>
+                        <h3 class="cost d-inline-block mr-1">$83.00</h3><span class="text-light">/year</span>
+                    </div>    
+                    <div>
+                      <table  class="featlist">
+                        <tbody>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Free Templates: <span class="tempnum" style="color: #ff0031;">8/8</span></td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Resume Version: <span class="tempnum" style="color: #ff0031;">3</span></td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Download and Save your resume in multiple Format</td>
+                          </tr>
+                          <tr>
+                            <td><i class="fas fa-check-circle"></i></td>
+                            <td>Removing branding on your resume</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div> 
+                    <div class="subbtn">
+                      <div class="bgstyle"></div>
+                      <button type="button" class="btn text-light">Subscribed</button>
+                    </div> 
+           </div>
+        </div>
+
+        <!-- Contact us --> 
+        <div class="row divpos" style="margin-top: 0.5em;" id="contactus" data-aos="zoom-in-up">
+          <div class="col-12 mt-5 mb-5">
+            <h1 class="text-center" style="color: khaki;">Contact Us</h1>
+          </div>
+          <div class="col-5 m-auto">
+            <form action="" method="post" style="margin-bottom: 7em;">
+              <fieldset>
+              <div class="form-group">
+                 <label for="uname" class="labelText">Full Name</label>
+                 <input type="text" name="name" id="uname" class="inptext form-control" autocomplete="off">
+              </div>
+              <div class="form-group">
+                 <label for="uemail" class="labelText">Email</label>
+                 <input type="text" name="email" id="uemail" class="inptext form-control" autocomplete="off">
+              </div>
+              <div class="form-group">
+                 <label for="umessage" class="labelText">Message</label>
+                 <textarea name="message" rows="4" cols="6" id="umessage" class="inptext form-control" autocomplete="off"></textarea>
+              </div>
+              <div class="form-group">
+                 <input type="submit" name="Submit" class="form-control btn btn-success">
+              </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+   		</div>
+   	</div>
+   </div>
+
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script src="javascript/jquery-3.5.1.js"></script>
+   <script src="javascript/index.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+   	  AOS.init({
+   	  	offset: 300,
+   	  	duration: 1000,
+        once:true
+   	  });
+
       var i=0;
       function read(){
         if(!i){
@@ -98,50 +284,24 @@
           document.getElementById("read").innerHTML="Read More";
           i=0;        
           
-        }
+        }  
       }
+
+     var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
     </script>
-          </div>
-        </div>
-
-        <!-- Templates --> 
-        <div class="row" style="margin-top: 38em;" id="template">
-          <div class="col-12">
-            <h1 class="text-center">Templates</h1>
-          </div>
-        </div> 
-
-        <!-- Contact us --> 
-        <div class="row" style="margin-top: 38em;" id="contactus">
-          <div class="col-12 m-5">
-            <h1 class="text-center" style="color: khaki;">Contact Us</h1>
-          </div>
-          <div class="col-5 m-auto">
-            <form action="" method="post">
-              <fieldset>
-              <div class="form-group">
-                 <label for="uname" class="labelText">Full Name</label>
-                 <input type="text" name="name" id="uname" class="inptext form-control" autocomplete="off">
-              </div>
-              <div class="form-group">
-                 <label for="uemail" class="labelText">Email</label>
-                 <input type="text" name="email" id="uemail" class="inptext form-control" autocomplete="off">
-              </div>
-              <div class="form-group">
-                 <label for="umessage" class="labelText">Message</label>
-                 <textarea name="message" rows="2" cols="6" id="umessage" class="inptext form-control" autocomplete="off"></textarea>
-              </div>
-              <div class="form-group">
-                 <input type="submit" name="Submit" class="form-control btn btn-success">
-              </div>
-              </fieldset>
-            </form>
-          </div>
-        </div>
-   		</div>
-   	</div>
-   </div>
-   <script src="javascript/jquery-3.5.1.js"></script>
-   <script src="javascript/index.js"></script>
 </body>
 </html>
+
+
+
+
